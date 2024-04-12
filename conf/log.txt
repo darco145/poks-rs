@@ -1,0 +1,25 @@
+Header: HTTP/2 200 
+server: nginx/1.24.0
+date: Fri, 12 Apr 2024 09:04:23 GMT
+content-type: application/json; charset=utf-8
+content-length: 241
+access-control-allow-origin: *
+x-frame-options: SAMEORIGIN
+x-xss-protection: 1; mode=block
+x-content-type-options: nosniff
+referrer-policy: strict-origin-when-cross-origin
+x-envoy-upstream-service-time: 2
+via: 1.1 google
+strict-transport-security: max-age=2592000; includeSubDomains
+alt-svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+
+Body: {
+  "ip": "31.223.154.163",
+  "city": "Bratunac",
+  "region": "Srpska",
+  "country": "BA",
+  "loc": "44.1846,19.3309",
+  "org": "AS25144 \"Telekomunikacije Republike Srpske\" akcionarsko drustvo Banja Luka",
+  "timezone": "Europe/Sarajevo"
+}

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ПОКРЕТ ОСНИВАЊА КНЕЖЕВИНЕ СРПСКЕ</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<link rel="stylesheet" href="styles/pojedinacne_vesti_style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+    <div class="container-fluid d-flex align-items-center justify-content-start"> 
+        <a class="navbar-brand flex-fill align-items-center" href="#"> 
+            <img src="images/poks-logo.png" alt="poks-logo" id="navbar-logo">
+            <span class="navbar-text flex-fill">
+                ПОКРЕТ ОСНИВАЊА КНЕЖЕВИНЕ СРПСКЕ
+            </span>
+        </a>
+        <ul class="navbar-nav social-icons flex-row justify-content-between">
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        ☰
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="http://localhost/poks/home.html">Почетна</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="http://localhost/poks/vesti.html">Вијести</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    O нама
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="http://localhost/poks/o_nama.html">О Покрету</a>
+                    <a class="dropdown-item" href="#">Програм ПОКС-а</a>
+                    <a class="dropdown-item" href="http://localhost/poks/foto_galerija.html">Фото галерија</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="http://localhost/poks/postani_clan.html">Постаните члан</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="http://localhost/poks/o_nama.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Oргани
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="http://localhost/poks/predsednik.html">Предсједник</a>
+                    <a class="dropdown-item" href="#">Предсједништво</a>
+                    <a class="dropdown-item" href="#">Главни одбор</a>
+                    <a class="dropdown-item" href="#">Извршни одбор</a>
+                    <a class="dropdown-item" href="#">Млади ПОКС-а</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="http://localhost/poks/kontakt.html">Контакт</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container-fluid text-center p-3 my-3">
+    <h2 id="vest-naslov" class="m-0 mb-3 text-center mx-auto"></h2>
+</div>
+<div class="container">
+    <div class="image-container">
+        <div class="row">
+            <div class="col-1">
+                <div id="vest-datum" class="text-muted mt-2 d-none d-lg-block"></div>
+                <div id="enlarge-icon" class="enlarge-icon text-center mx-auto d-none d-lg-block">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="col-10">
+                <img id="vest-slika" src="" alt="Slika vesti" class="img-fluid"></img>
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </div>
+    <div id="vest-tekst" class="mt-3"></div>
+    <p id="vest-autor" class="mt-2"></p>
+    <div id="vest-datum-mali-ekran" class="text-muted mt-2 d-lg-none"></div>
+</div>
+
+<div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+  </div>
+
+<div class="container mt-4" id="carousel-news">
+    <p class="news-text mt-5" id="textNews" style="font-weight: bold; font-style: italic;">Остале вијести</p>
+    <div id="vestiCarousel" class="carousel slide d-block d-md-none" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="col-12">
+                        <img src="" class="img-fluid" id="pojedinacnaSlika1">
+                        <h5 class="card-simple-title" id="naslovPojedinacnihVesti1"></h5>
+                        <p class="card-simple-text" id="tekstPojedinacnihVesti1"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-12">
+                        <img src="" class="img-fluid" id="pojedinacnaSlika2">
+                        <h5 class="card-simple-title" id="naslovPojedinacnihVesti2"></h5>
+                        <p class="card-simple-text" id="tekstPojedinacnihVesti2"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-12">
+                        <img src="" class="img-fluid" id="pojedinacnaSlika3">
+                        <h5 class="card-simple-title" id="naslovPojedinacnihVesti3"></h5>
+                        <p class="card-simple-text" id="tekstPojedinacnihVesti3"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#vestiCarousel" role="button" data-slide="prev" id="prethodnaVestBtn">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#vestiCarousel" role="button" data-slide="next" id="sledecaVestBtn">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <div id="vestiGrid" class="news-grid d-none d-md-block">
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <a href="#">
+                <img src="" class="img-fluid" id="gridSlika1">
+                <h5 class="card-simple-title" id="gridNaslov1"></h5>
+                </a>
+                <p class="card-simple-text" id="gridTekst1"></p>
+            </div>
+            <div class="col-md-4 mb-3">
+                <a href="#">
+                <img src="" class="img-fluid" id="gridSlika2">
+                <h5 class="card-simple-title" id="gridNaslov2"></h5>
+                </a>
+                <p class="card-simple-text" id="gridTekst2"></p>
+            </div>
+            <div class="col-md-4 mb-3">
+                <a href="#">
+                <img src="" class="img-fluid" id="gridSlika3">
+                <h5 class="card-simple-title" id="gridNaslov3"></h5>
+                </a>
+                <p class="card-simple-text" id="gridTekst3"></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<footer id="footer" class="font-small pt-4">
+    <div class="container-fluid text-center text-md-left">
+        <div class="row">
+            <div class="col-md-3 mt-md-0 mt-6 d-none d-lg-block">
+                <ul id="footer-links">
+                    <li><a href="http://localhost/poks/home.html">Почетна</a></li>
+                    <li><a href="http://localhost/poks/vesti.html">Вијести</a></li>
+                    <li><a href="http://localhost/poks/o_nama.html">О нама</a></li>
+                    <li><a href="http://localhost/poks/postani_clan.html">Постаните члан</a></li>
+                    <li><a href="#">Мултимедије</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 mt-md-0 mt-6 d-lg-none">
+                <ul id="footer-links" class="list-unstyled">
+                    <li><a href="http://localhost/poks/home.html">Почетна</a></li>
+                    <li><a href="http://localhost/poks/vesti.html">Вијести</a></li>
+                    <li><a href="http://localhost/poks/o_nama.html">О нама</a></li>
+                    <li><a href="http://localhost/poks/postani_clan.html">Постаните члан</a></li>
+                    <li><a href="#!">Мултимедије</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 mt-md-0 mt-6 d-none d-lg-block">
+                <ul id="footer-links-contact">
+                    <li>Адреса: Краља Петра II Карађорђевића 15 78000 Бања Лука</a></li>
+                    <li>Телефон/факс: +387 56 260 109</li>
+                    <li>Информације: +387 56 260 109</li>
+                    <li>Емаил: poks-rs@gmail.com</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 mt-md-0 mt-6 d-lg-none">
+                <ul id="footer-links-contact" class="list-unstyled">
+                    <li>Адреса: Краља Петра II Карађорђевића 15 78000 Бања Лука</a></li>
+                    <li>Телефон/факс: +387 56 260 109</li>
+                    <li>Информације: +387 56 260 109</li>
+                    <li>Емаил: poks-rs@gmail.com</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 mb-md-0 mb-3">
+            </div>
+            <div class="col-md-3 mb-md-0 mb-3 d-none d-lg-block">
+                <ul id="social-icons-footer">
+                    <li><a class="nav-link" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a class="nav-link" href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a class="nav-link" href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 mb-md-0 mb-3 d-lg-none">
+                <ul id="social-icons-footer" class="d-flex justify-content-center align-items-center list-unstyled">
+                    <li><a class="nav-link" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a class="nav-link" href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a class="nav-link" href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+            <div class="col-12 text-md-left mt-4 d-lg-none">
+                <p class="copyright">&copy; 2023 Покрет оснивања Кнежевине Српске</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-md-left mt-4 d-none d-lg-block">
+                <p class="copyright">&copy; 2023 Покрет оснивања Кнежевине Српске</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="scripts/pojedinacna_vest.js"></script>
+</body>
+</html>
